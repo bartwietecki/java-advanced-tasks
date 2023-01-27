@@ -1,4 +1,4 @@
-package example.task4;
+package homework.task4;
 
 /**
  * Klasa Person

@@ -1,4 +1,4 @@
-package example.task7;
+package homework.task7;
 
 /**
  * Napisz metodę generyczną, które zadaniem będzie zamiana (swap) elementów o wskazanych pozycjach w tablicy.

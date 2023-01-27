@@ -1,4 +1,4 @@
-package example.task8;
+package homework.task8;
 
 /**
  * Napisz metodę, której celem jest wyświetlenie zwartości dowolnej listy z poniższych:

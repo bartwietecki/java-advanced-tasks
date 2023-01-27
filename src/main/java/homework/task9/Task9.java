@@ -1,4 +1,4 @@
-package example.task9;
+package homework.task9;
 
 /**
  * Przygotuj klasę Movie o następujących polach:

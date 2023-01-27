@@ -1,4 +1,4 @@
-package example.task3;
+package homework.task3;
 
 /**
  * Napisz klasę realizującą system lotto.

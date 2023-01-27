@@ -1,4 +1,4 @@
-package example.task10;
+package homework.task10;
 
 /**
  * Napisz klasę Car, która będzie zawierać pola nazwa i rodzaj samochodu.

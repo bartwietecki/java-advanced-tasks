@@ -1,4 +1,4 @@
-package example.task6;
+package homework.task6;
 
 /**
  * Zadanie 4

@@ -1,4 +1,4 @@
-package example.task2;
+package homework.task2;
 
 /**
  * Korzystając z Stream API, napisz funkcję, która dla poniższego przykładu:
