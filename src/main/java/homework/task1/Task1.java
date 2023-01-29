@@ -1,6 +1,7 @@
 package homework.task1;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -20,18 +21,22 @@ public class Task1 {
     public static void main(String[] args) {
 
         List<Integer> values = new ArrayList<>();
-
         values.add(10);
         values.add(11);
         values.add(10);
         values.add(11);
         values.add(12);
         values.add(11);
+        System.out.println("Oryginalna Lista values: " + values);
 
-        System.out.println(values);
-
+        // Konwersja Listy na Hashset
+        HashSet<Integer> hashSet = new HashSet<Integer>(values);
+        List<Integer> uniqueList = new ArrayList<>(hashSet);
+        System.out.println("Unikalne elementy z Listy values przy użyciu HashSet: " + uniqueList);
 
     }
 
+    // musze przyjąć listę, przekonwertować ją w metodzie na HashSet i zwrócić ten HashSet, który ma elementami unikalnymi
 
 }
+

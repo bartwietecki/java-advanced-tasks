@@ -6,10 +6,12 @@ package homework.task3;
  * - ostatnie losowanie (tablica liczb)
  * - liczba wygranych
  * - metodę do wykonania losowania (generowanie losowych 6 liczb z przedziału 1-49)
- * - metoda powinna przyjmować na wejściu zestaw 6 liczb i sprawdzać liczbę trafień, jeśli ktoś trafił 6 zwiększamy licznik wygranych
+ * - metoda powinna przyjmować na wejściu zestaw 6 liczb i sprawdzać liczbę trafień,
+ *   jeśli ktoś trafił 6 zwiększamy licznik wygranych
  * Zadbaj o odpowiedni dostęp do informacji o ostatnim losowaniu.
  * NAPISZ TESTY JEDNOSTKOWE DLA ROZWIĄZANIA
  */
 
 public class Task3 {
+
 }

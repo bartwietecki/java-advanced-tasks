@@ -2,7 +2,7 @@ package homework.task2;
 
 /**
  * Korzystając z Stream API, napisz funkcję, która dla poniższego przykładu:
- *     List<Movie> movies = Arrays.asList(….)
+ *     List<Movie> movies = Arrays.asList(...)
  *     gdzie Movie to klasa
  *     class Movie {
  *     String title;
@@ -18,4 +18,5 @@ package homework.task2;
  */
 
 public class Task2 {
+
 }

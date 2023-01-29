@@ -1,7 +1,7 @@
 package homework.task6;
 
 /**
- * Zadanie 4
+ * Zadanie 6
  * Stwórz klasę Car, która będzie zawierać pola takie jak:
  * - typ
  * - silnik
