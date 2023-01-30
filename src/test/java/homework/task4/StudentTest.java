@@ -51,27 +51,10 @@ class StudentTest {
         assertEquals(20_000, student.getCostsOfStudies());
     }
 
-    // wywala błąd
+    // Metoda showDetails ???
+    @Test
+    public void testShowDetails() {
 
-//    @Test
-//    public void showDetailsTest(){
-//        Student student = new Student("Jan Kowalski", "Kwiatowa 13", "Filologia angielska",
-//                4, 20_000);
-//        student.setName("Jan Kowalski");
-//        student.setAddress("Kwiatowa 13");
-//
-//        // pomoc internetu poniżej..
-//
-//        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-//        System.setOut(new PrintStream((outContent)));
-//
-//        student.showDetails();
-//        String expectedOutput = "Student details:\n" +
-//                "Name: Jan Kowalski\n" +
-//                "Address: Kwiatowa 13\n" +
-//                "Type of studies: Filologia angielska\n" +
-//                "Year of studies: 4\n" +
-//                "Costs of studies: 20 000\n";
-//        assertEquals(expectedOutput, outContent.toString());
-//    }
+    }
+
 }

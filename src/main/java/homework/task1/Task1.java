@@ -34,9 +34,21 @@ public class Task1 {
         List<Integer> uniqueList = new ArrayList<>(hashSet);
         System.out.println("Unikalne elementy z Listy values przy użyciu HashSet: " + uniqueList);
 
+        System.out.println("Użycie metody getUniqueElements:");
+        System.out.println(getUniqueElements(values));
+
+
     }
 
-    // musze przyjąć listę, przekonwertować ją w metodzie na HashSet i zwrócić ten HashSet, który ma elementami unikalnymi
+    public static List<Integer> getUniqueElements(List<Integer> elements) {
+        List<Integer> uniqueElements = new ArrayList<>();
+        for (Integer i : elements){
+            if(!uniqueElements.contains(i)){
+                uniqueElements.add(i);
+            }
+        }
+        return uniqueElements;
+    }
 
 }
 

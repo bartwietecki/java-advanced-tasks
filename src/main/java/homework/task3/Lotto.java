@@ -18,6 +18,7 @@ public class Lotto {
         return numberOfWinners;
     }
 
+    // METHODS:
 
     public void sixNumbersDrawing() {
         Random random = new Random();

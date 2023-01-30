@@ -36,8 +36,22 @@ public class Movie {
                 .collect(Collectors.toList());
 
         System.out.println(" All movies: " + movies);
-
         System.out.println("Filtered movies: " + filteredMovies);
+
+
+        System.out.println("Użycie poniższej metody:");
+        System.out.println(filteringMoviesMethod(movies));
+    }
+
+    public static List<Movie> filteringMoviesMethod(List<Movie> movies) {
+        List<Movie> filteredMovies = movies.stream()
+                .filter((movie -> movie.duration > 20))
+                .filter(movie -> movie.releaseDate.getYear() > 2018)
+                .filter(movie -> movie.type.equals("horror"))
+                .collect(Collectors.toList());
+        return filteredMovies;
     }
 
 }
+
+
