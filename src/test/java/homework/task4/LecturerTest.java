@@ -1,10 +1,21 @@
 package homework.task4;
 
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class LecturerTest {
+
+    // zmienne zadeklarowane dla testu metody showDetails
+    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+    private final PrintStream originalOut = System.out;
+    private Lecturer lecturer;
+
 
     @Test
     public void testGetSpecialization() {
@@ -36,10 +47,28 @@ class LecturerTest {
         assertEquals(3500, lecturer.getSalary());
     }
 
-    // Metoda showDetails ???
-    @Test
-    public void testShowDetails() {
 
+    // test dla metody showDetails
+    @BeforeEach
+    public void setUpStreams() {
+        System.setOut(new PrintStream(outContent));
+        lecturer = new Lecturer("Jan Kowalski", "Kwiatowa 13", "Archeologia", 3500);
+    }
+
+    @AfterEach
+    public void restoreStreams() {
+        System.setOut(originalOut);
+    }
+
+    @Test
+    public void testShowDetails1() {
+        lecturer.showDetails();
+        String expectedOutput = "Lecturer details:\r\n" +
+                "Name: Jan Kowalski\r\n" +
+                "Address: Kwiatowa 13\r\n" +
+                "Specialization: Archeologia\r\n" +
+                "Salary: 3500\r\n";
+        assertEquals(expectedOutput, outContent.toString());
     }
 
 }

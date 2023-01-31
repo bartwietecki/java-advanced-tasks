@@ -34,4 +34,6 @@ public class Lecturer extends Person{
         System.out.println("Specialization: " + specialization);
         System.out.println("Salary: " + salary);
     }
+
+
 }
