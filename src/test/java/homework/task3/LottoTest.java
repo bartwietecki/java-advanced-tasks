@@ -21,10 +21,8 @@ class LottoTest {
     @Test
     public void checkNumbersTest() {
         Lotto lotto = new Lotto();
-        lotto.sixNumbersDrawing();
-        int[] lastDrawing = lotto.getLastDrawing();
-        int[] numbers = new int[] { lastDrawing[0], lastDrawing[1], lastDrawing[2],
-        lastDrawing[3], lastDrawing[4], lastDrawing[5]};
+        lotto.lastDrawing = new int[]{1,2,3,4,5,6};
+        int[] numbers = new int[]{1,2,3,4,5,6};
 
         int tries = lotto.checkNumbers(numbers);
 
